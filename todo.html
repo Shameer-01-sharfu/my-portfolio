@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>To-Do List | Shameer S</title>
+<meta name="description" content="Interactive JavaScript To-Do List demonstrating CRUD, localStorage, filtering, DOM manipulation and event delegation.">
+<meta name="author" content="Shameer S">
+<meta name="theme-color" content="#5b4bdb">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main-content">Skip to content</a>
+<header class="site-header">
+<div class="container nav">
+<a class="brand" href="index.html">Shameer S<span>.</span></a>
+<div class="nav-actions">
+<button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation">☰</button>
+<nav id="primary-navigation" aria-label="Primary navigation">
+<ul class="nav-list">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="skills.html">Skills</a></li>
+<li><a href="todo.html" aria-current="page">To-Do</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">☾ Dark</button>
+</div>
+</div>
+</header>
+
+<main id="main-content">
+<section>
+<div class="container">
+<div class="section-head">
+<div>
+<span class="section-kicker">JavaScript Logic & State Management</span>
+<h1>To-Do List Application</h1>
+<p>Create, manage, filter and persist your tasks directly in the browser.</p>
+</div>
+</div>
+
+<div class="card">
+<form id="todo-form" class="todo-form">
+<label class="skip" for="todo-input">New task</label>
+<input id="todo-input" type="text" maxlength="200" placeholder="Enter a new task..." autocomplete="off" required>
+<button class="btn btn-primary" type="submit">Add Task</button>
+</form>
+
+<div class="todo-toolbar" role="group" aria-label="Task filters">
+<button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All</button>
+<button class="filter-btn" type="button" data-filter="active" aria-pressed="false">Active</button>
+<button class="filter-btn" type="button" data-filter="completed" aria-pressed="false">Completed</button>
+</div>
+
+<p id="todo-status" class="todo-status" role="status" aria-live="polite"></p>
+
+<ul id="todo-list" class="todo-list" aria-label="Task list"></ul>
+
+<div class="todo-meta">
+<span id="todo-count">0 tasks</span>
+<button id="clear-completed" class="todo-action" type="button">Clear completed</button>
+</div>
+</div>
+
+<div class="card" style="margin-top:1rem">
+<h2>Task Features</h2>
+<ul>
+<li>Create new tasks dynamically with JavaScript.</li>
+<li>Read and render saved tasks from browser localStorage.</li>
+<li>Update tasks by editing text or changing completion state.</li>
+<li>Delete individual tasks or clear all completed tasks.</li>
+<li>Filter tasks by All, Active and Completed states.</li>
+<li>Use event delegation for task-list interactions.</li>
+<li>Persist the application state across browser reloads.</li>
+</ul>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+<div class="container footer-row">
+<span>© <span data-year>2026</span> Shameer S · Built with semantic HTML5, CSS3 & JavaScript.</span>
+<div class="footer-links">
+<a href="https://github.com/Shameer-01-sharfu">GitHub</a>
+<a href="https://linkedin.com/in/shameer-s-189605381">LinkedIn</a>
+<a href="https://leetcode.com/u/Shameer1">LeetCode</a>
+</div>
+</div>
+</footer>
+<script src="assets/script.js"></script>
+<script src="assets/todo.js"></script>
+</body>
+</html>

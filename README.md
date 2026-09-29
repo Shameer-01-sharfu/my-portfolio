@@ -19,3 +19,14 @@ Built for Thiranex Task 1 and Task 2.
 
 ## Deploy
 GitHub Pages: enable Pages from the `main` branch and `/ (root)`.
+
+
+## JavaScript Logic & State Management — Task 3
+- Interactive client-side To-Do List application
+- Full CRUD: create, read, update and delete
+- Automatic persistence with `window.localStorage`
+- All, Active and Completed filtering
+- Dynamic DOM rendering
+- Event delegation for task-list actions
+- State-driven task management across browser reloads
+- Accessible controls and live status messages
