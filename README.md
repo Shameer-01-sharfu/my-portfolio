@@ -48,7 +48,19 @@ GitHub Pages: enable Pages from the `main` branch and `/ (root)`.
 - Modular frontend architecture using separated product data, state, rendering and routing logic
 - Hash-based client-side routing for Home, Products, Product Details and Cart
 - Product search, category filtering and persistent cart state with localStorage
-- Responsive UI with lazy-loaded product images
-- Lightweight local SVG product assets to reduce network requests and avoid large image downloads
+- Responsive UI with lazy-loaded realistic product photography
+- Optimized Pexels CDN image delivery with width-limited requests, lazy loading and async decoding
 - Deployment-ready configuration for Vercel and Netlify; static files can also be served by Render
 - Production-style structure designed for a public live deployment
+
+
+### Task 5 Product Image Sources
+The SHA Store catalog uses realistic free-to-use product photography from Pexels, delivered through the Pexels CDN.
+- Smartphone: https://www.pexels.com/photo/smartphone-on-white-background-12882840/
+- Headphones: https://www.pexels.com/photo/modern-headphones-on-white-background-7772547/
+- Laptop: https://www.pexels.com/photo/a-laptop-with-blank-screen-on-a-white-surface-8534047/
+- Smartwatch: https://www.pexels.com/photo/close-up-of-an-apple-watch-on-white-background-14691505/
+- Keyboard: https://www.pexels.com/photo/keyboard-on-white-background-18114576/
+- Speaker: https://www.pexels.com/photo/bluetooth-speaker-5511714/
+
+Note: Task 5 is a production-style static frontend capstone with client-side routing and localStorage cart persistence; it does not include a server-side database or payment backend.
