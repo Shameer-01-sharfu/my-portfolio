@@ -41,3 +41,14 @@ GitHub Pages: enable Pages from the `main` branch and `/ (root)`.
 - Search weather by city name
 - Displays temperature, humidity, wind speed and current conditions
 - Uses Open-Meteo public REST APIs without a client-side API key
+
+
+## Full-Stack Deployment & Project Architecture — Task 5
+- SHA Store e-commerce product catalog capstone
+- Modular frontend architecture using separated product data, state, rendering and routing logic
+- Hash-based client-side routing for Home, Products, Product Details and Cart
+- Product search, category filtering and persistent cart state with localStorage
+- Responsive UI with lazy-loaded product images
+- Lightweight local SVG product assets to reduce network requests and avoid large image downloads
+- Deployment-ready configuration for Vercel and Netlify; static files can also be served by Render
+- Production-style structure designed for a public live deployment

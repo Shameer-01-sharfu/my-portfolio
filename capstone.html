@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SHA Store | Full-Stack Web Capstone</title>
+<meta name="description" content="SHA Store — a production-style e-commerce product catalog capstone built with modular JavaScript, client-side routing and responsive UI.">
+<meta name="author" content="Shameer S">
+<meta name="theme-color" content="#5b4bdb">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/capstone.css">
+</head>
+<body>
+<a class="skip" href="#main-content">Skip to content</a>
+<header class="site-header">
+<div class="container nav">
+<a class="brand" href="index.html">Shameer S<span>.</span></a>
+<div class="nav-actions">
+<button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation">☰</button>
+<nav id="primary-navigation" aria-label="Primary navigation">
+<ul class="nav-list">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="skills.html">Skills</a></li>
+<li><a href="todo.html">To-Do</a></li>
+<li><a href="weather.html">Weather</a></li>
+<li><a href="capstone.html" aria-current="page">Capstone</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">☾ Dark</button>
+</div>
+</div>
+</header>
+
+<main id="main-content">
+<section class="capstone-shell">
+<div class="container">
+<div class="capstone-topbar">
+<div>
+<span class="section-kicker">Full-Stack Deployment & Project Architecture</span>
+<h1>SHA Store</h1>
+<p class="lead">A production-style e-commerce product catalog demonstrating modular frontend architecture, client-side routing, optimized assets and deployment-ready configuration.</p>
+</div>
+<div class="capstone-cart" aria-live="polite">Cart <strong id="cart-count">0</strong></div>
+</div>
+
+<div id="app-status" class="capstone-status" role="status" aria-live="polite"></div>
+<div id="app" class="capstone-app"></div>
+
+<noscript>
+<div class="card"><h2>JavaScript required</h2><p>Please enable JavaScript to use the product catalog, client-side routing and cart.</p></div>
+</noscript>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="section-head"><div><span class="section-kicker">Architecture</span><h2>Capstone implementation</h2></div></div>
+<div class="capstone-features">
+<article class="card"><h3>Modular frontend</h3><p>Product data, application state, rendering, routing and UI actions are separated into focused JavaScript modules.</p></article>
+<article class="card"><h3>Client-side routing</h3><p>Hash-based routes provide seamless Home, Products, Product Details and Cart navigation without full-page reloads.</p></article>
+<article class="card"><h3>Performance</h3><p>Responsive CSS, lightweight local SVG product assets, lazy image loading and a small dependency-free JavaScript bundle keep the app fast.</p></article>
+<article class="card"><h3>Deployment ready</h3><p>Static hosting configuration is included for Vercel and Netlify, with a production build that can also be served by Render.</p></article>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+<div class="container footer-row"><span>© <span data-year>2026</span> Shameer S · SHA Store Capstone.</span><div class="footer-links"><a href="https://github.com/Shameer-01-sharfu">GitHub</a><a href="https://linkedin.com/in/shameer-s-189605381">LinkedIn</a><a href="https://leetcode.com/u/Shameer1">LeetCode</a></div></div>
+</footer>
+<script src="assets/script.js"></script>
+<script src="assets/capstone.js" defer></script>
+</body>
+</html>
