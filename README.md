@@ -30,3 +30,14 @@ GitHub Pages: enable Pages from the `main` branch and `/ (root)`.
 - Event delegation for task-list actions
 - State-driven task management across browser reloads
 - Accessible controls and live status messages
+
+
+## Asynchronous JavaScript & RESTful APIs — Task 4
+- Real-time Weather Dashboard
+- Fetch API with async/await
+- RESTful city search and live weather requests
+- Error handling for failed requests and unknown cities
+- Dynamic parsing and rendering of nested JSON data
+- Search weather by city name
+- Displays temperature, humidity, wind speed and current conditions
+- Uses Open-Meteo public REST APIs without a client-side API key

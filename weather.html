@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Weather Dashboard | Shameer S</title>
+<meta name="description" content="Real-time weather dashboard using asynchronous JavaScript, Fetch API, async/await and a public REST API.">
+<meta name="author" content="Shameer S">
+<meta name="theme-color" content="#5b4bdb">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/weather.css">
+</head>
+<body class="weather-page">
+<a class="skip" href="#main-content">Skip to content</a>
+<header class="site-header"><div class="container nav">
+<a class="brand" href="index.html">Shameer S<span>.</span></a>
+<div class="nav-actions">
+<button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation">☰</button>
+<nav id="primary-navigation" aria-label="Primary navigation"><ul class="nav-list">
+<li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="skills.html">Skills</a></li><li><a href="todo.html">To-Do</a></li><li><a href="weather.html" aria-current="page">Weather</a></li><li><a href="contact.html">Contact</a></li>
+</ul></nav>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">☾ Dark</button>
+</div></div></header>
+<main id="main-content"><section><div class="container">
+<div class="section-head"><div><span class="section-kicker">Asynchronous JavaScript & RESTful APIs</span><h1>Real-Time Weather Dashboard</h1><p>Search any city to retrieve live weather metrics from a public REST API.</p></div></div>
+<div class="card">
+<form id="weather-form" class="weather-search" role="search">
+<label class="skip" for="city-input">City name</label>
+<input id="city-input" name="city" type="search" placeholder="Enter city name..." autocomplete="off" required>
+<button class="btn btn-primary" type="submit">Search Weather</button>
+</form>
+<p id="weather-status" class="weather-status" role="status" aria-live="polite"></p>
+<div id="weather-result" aria-live="polite"><div class="weather-empty">Loading Chennai weather...</div></div>
+</div>
+<div class="card" style="margin-top:1rem"><h2>Task Features</h2><ul>
+<li>Fetches city and live weather data using the modern Fetch API.</li>
+<li>Uses async/await for asynchronous network requests.</li>
+<li>Handles failed requests, unknown cities and incomplete API responses.</li>
+<li>Parses nested JSON objects from the geocoding and weather responses.</li>
+<li>Searches weather by city name and dynamically renders the results.</li>
+<li>Displays temperature, humidity, wind speed and current conditions.</li>
+</ul></div>
+</div></section></main>
+<footer class="footer"><div class="container footer-row">
+<span>© <span data-year>2026</span> Shameer S · Built with semantic HTML5, CSS3 & JavaScript.</span>
+<div class="footer-links"><a href="https://github.com/Shameer-01-sharfu">GitHub</a><a href="https://linkedin.com/in/shameer-s-189605381">LinkedIn</a><a href="https://leetcode.com/u/Shameer1">LeetCode</a></div>
+</div></footer>
+<script src="assets/script.js"></script><script src="assets/weather.js"></script>
+</body></html>
